@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Scheduler Bot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="container py-4">
+    <h1 class="text-center mb-4">Meeting Scheduler Bot</h1>
+    <div id="chat" class="border rounded p-3 mb-3"></div>
+    <form id="input-form" class="d-flex">
+        <input type="text" id="user-input" class="form-control me-2" placeholder="Type your message" autocomplete="off" required>
+        <button class="btn btn-primary" type="submit">Send</button>
+    </form>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
